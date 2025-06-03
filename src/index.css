@@ -1,0 +1,47 @@
+:root {
+  font-family: 'Roboto', system-ui, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+/* Animações para elementos da interface */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.MuiPaper-root {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Melhorias visuais para botões */
+.MuiButton-contained {
+  transition: transform 0.2s ease-in-out !important;
+}
+
+.MuiButton-contained:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Melhorias visuais para tabelas */
+.MuiTableRow-root:hover {
+  transition: background-color 0.2s ease-in-out;
+}
+
+/* Melhorias visuais para inputs */
+.MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+  border-color: #1976d2 !important;
+}
+
+/* Estilo para o modal */
+.MuiDialog-paper {
+  border-radius: 8px !important;
+  overflow: hidden !important;
+}
